@@ -1,0 +1,110 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown_opened > .dropdown__list {
+  display: block;
+}
+
+.dropdown__list {
+  position: absolute;
+  z-index: 11;
+  display: none;
+  list-style: none;
+  background-color: #fff;
+  margin: 0;
+  top: 100%;
+  width: 100%;
+  min-width: 320px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-out;
+  padding: 0;
+  filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.1));
+  li {
+    font-size: 14px;
+    border-bottom: 1px solid rgba(18, 34, 53, 0.3);
+      a {
+        color: $color-black;
+      }
+  }
+}
+
+.dropdown_opened {
+  .dropdown__text p::after {
+    transform: rotate(-45deg);
+    top: 10px;
+  }
+  .dropdown__text {
+    background-color: transparent;
+  }
+}
+
+.dropdown__text p::after {
+  position: absolute;
+  right: -20px;
+  height: 7px;
+  width: 7px;
+  top: 5px;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  color: transparent;
+  content: '';
+  font-size: 10px;
+  transform: rotate(135deg);
+  transition: transform .3s;
+}
+
+.dropdown__text {
+  background-color: transparent;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+  color: #ccc;
+    p {
+      position: relative;
+      transition: all 0.3s;
+        a {
+          &:hover {
+            color: $color-coral;
+            transition: all 0.3s;
+          }
+        }
+    }
+}
+
+.dropdown__item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-top: 0;
+  width: 100%;
+  font-size: 14px;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0 !important;
+    a {
+      padding: 16px 20px;
+    }
+    &:hover {
+      transition: all 0.2s ease-in-out;
+      color: #fff;
+      background-color: $color_light;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+}
+
+.custom-content iframe {
+  margin-bottom: 20px;
+}
+
+ul li::before, ol li::before {
+  height: 2px;
+}

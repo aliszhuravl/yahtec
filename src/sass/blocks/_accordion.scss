@@ -1,0 +1,114 @@
+.accordion {
+  width: 100%;
+  border-bottom: 1px solid #aaa;
+  border-bottom: none;
+}
+
+.accordion__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.accordion__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 32px;
+  background-color: #122235;
+  font-family: $font-family_bold;
+  font-size: 18px;
+  text-decoration: none;
+  color: #ccc;
+  transition: all .15s;
+  will-change: background-color;
+  cursor: default;
+
+  &:before { /* vertical element */
+    content: '';
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    will-change: transform, width;
+    transition: all .15s;
+    width: 2px;
+    height: 14px;
+    background-color: #ccc;
+    z-index: 1;
+  }
+
+  &:after { /* horizontal element */
+    content: '';
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    will-change: transform;
+    transition: all .15s;
+    width: 14px;
+    height: 2px;
+    background-color: #ccc;
+  }
+}
+
+.accordion__item_open {
+
+  & .accordion__btn {
+    background-color: #122235;
+    border-bottom-color: transparent;
+
+    &:before {
+      height: 2px;
+    }
+  }
+
+  & .accordion__content {
+    display: block;
+  }
+}
+
+.accordion__content {
+  display: none;
+  padding: 10px 0 30px 20px;
+  background-color: #122235;
+  will-change: height;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+        li {
+          margin-bottom: 12px;
+        }
+    }
+   p {
+     margin-bottom: 13px;
+     font-size: 16px;
+   }
+}
+
+.accordion__text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 17px;
+  font-weight: normal;
+  left: 20px;
+  position: absolute;
+}
+
+.acc_text {
+  max-width: 80%;
+    ol {
+      li {
+        margin-bottom: 8px;
+      }
+    }
+}

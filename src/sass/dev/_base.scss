@@ -1,0 +1,66 @@
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+  background-color: $color-white;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font: $font-normal 16px/1.7 $font-family;
+  letter-spacing: 0.03em;
+  font-weight: normal;
+  font-style: normal;
+  color: $font-color_dark;
+}
+
+a {
+  transition: color, .2s;
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 32px;
+  font-weight: normal;
+  font-family: $font-family_semibold;
+  line-height: normal;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-weight: normal;
+  font-size: 30px;
+  font-family: $font-family_bold;
+  line-height: normal;
+}
+
+h3 {
+  margin-bottom: 15px;
+  font-family: $font-family_bold;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: normal;
+}
+
+.semi18 {
+  font-size: 18px;
+  font-family: $font-family_semibold;
+}
+
+
+.bold16 {
+  font-family: $font-family_bold;
+  font-size: 16px;
+}

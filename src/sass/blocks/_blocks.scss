@@ -1,0 +1,56 @@
+.crossing_box {
+  align-items: flex-end;
+    .left {
+      img {
+        display: block;
+      }
+    }
+    .right {
+      background-color: #fff;
+      position: relative;
+      z-index: 2;
+      width: 60%;
+      margin-left: -17%;
+        &_box {
+          padding: 56px 0 56px 56px;
+            &__inner {
+              width: 100%;
+              padding-right: 40px;
+                .bold16 {
+                  margin-bottom: 32px;
+                }
+                .descr_box {
+                  .line {
+                    min-width: 40px;
+                  }
+                  p {
+                    margin-bottom: 32px;
+                  }
+                }
+            }
+        }
+      &:after {
+        position: absolute;
+        bottom: -24px;
+        right: -24px;
+        border: 24px solid transparent;
+        border-bottom: 24px solid $color_coral;
+        content: '';
+        transform: rotate(135deg);
+      }
+    }
+}
+
+.contacts_row {
+  width: 100%;
+  .contacts_column {
+    width: 33.3333%;
+    margin-right: 32px;
+      &:last-child {
+        padding-right: 0;
+      }
+      .semi18 {
+        margin-bottom: 24px;
+      }
+  }
+}

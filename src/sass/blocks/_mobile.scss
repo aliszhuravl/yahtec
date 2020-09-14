@@ -1,0 +1,146 @@
+@media (max-width: 640px) {
+  h1 {
+    font-size: 36px;
+  }
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  .semi18 {
+    font-size: 16px;
+  }
+  .logo {
+    img {
+      width: 160px;
+    }
+  }
+  .page__item_top {
+    margin-bottom: 30px;
+  }
+  .page__item_top .right {
+    display: none;
+  }
+  .page__top_title {
+    padding: 0 20px;
+  }
+  .page__top_title__inner .title_descr {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .page__top {
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+  .page__top_slider .pt_slide {
+    min-height: 100vh;
+  }
+  .page__item {
+    padding-bottom: 0;
+    padding-top: 15px;
+  }
+  .page_name {
+    padding-bottom: 15px;
+    border-bottom: 1px solid #ccc;
+  }
+  .crossing_box .right {
+    width: 100%;
+    margin-top: 0;
+    margin-left: 0;
+      &:after {
+        display: none;
+      }
+    .right_box {
+      padding: 30px 0 0 0;
+        &__inner {
+          padding-right: 0;
+          .bold16 {
+            margin-bottom: 20px;
+          }
+          .descr_box .line {
+            display: none;
+          }
+          .descr_box p {
+            margin-bottom: 20px;
+            font-size: 14px;
+          }
+        }
+    }
+  }
+  .link_arrow {
+    font-size: 14px;
+      &:after {
+        position: absolute;
+        top: 9px;
+        right: -14px;
+        width: 6px;
+        height: 6px;
+      }
+  }
+  .slider_controls {
+    margin-top: 20px;
+    .nums span {
+      font-size: 15px;
+    }
+  }
+  .footer {
+    margin-top: 0;
+  }
+  .footer_bottom .footer__inner .right {
+    display: none;
+  }
+  .footer_bottom .footer__inner .left {
+    border-right: 0;
+  }
+  .pib_slider {
+    overflow: hidden;
+  }
+
+  .tile {
+    .tile__item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 32px;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .catalog_tile {
+    .item {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 32px;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .quote {
+    padding: 20px;
+  }
+
+  .nums {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  .contacts_row .contacts_column .semi18 {
+    margin-bottom: 16px;
+  }
+  .contacts_rows .page__item_body {
+    margin-bottom: 0;
+    border-bottom: 1px dashed #ccc;
+      &:last-child {
+        border: 0;
+      }
+  }
+}

@@ -1,0 +1,122 @@
+@media (max-width: 1200px) {
+  .hamburger {
+    display: block;
+  }
+  .header {
+      &__inner {
+        padding: 20px;
+      }
+    .main_menu {
+      display: none;
+    }
+    .phone {
+      display: none;
+    }
+  }
+  .main_contacts .search {
+    margin-right: 40px;
+  }
+  .crossing_box {
+    flex-direction: column;
+      .left {
+        width: 100%;
+          img {
+            width: 100%;
+            display: block;
+          }
+      }
+      .right {
+        width: 85%;
+        margin-left: 0;
+        margin-top: -17%;
+        overflow: hidden;
+          &_box {
+            padding: 40px 0 40px 40px;
+          }
+      }
+  }
+
+  .page__top {
+    .slick-dots {
+      display: none !important;
+    }
+  }
+
+  .page__top_title {
+    padding: 0 40px;
+  }
+
+  .contacts_row {
+    flex-direction: column;
+      .contacts_column {
+        width: 100%;
+        margin-bottom: 32px;
+          .ico_box {
+            .text p {
+              max-width: 100%;
+            }
+          }
+      }
+  }
+
+  .footer_top {
+    display: none;
+  }
+  .footer_bottom .footer__inner {
+    .left {
+      padding-left: 20px;
+    }
+    .right {
+      padding-right: 20px;
+    }
+  }
+  .footer__inner_accordion {
+    display: block;
+  }
+
+  .tile {
+    .tile__item {
+      width: calc(50% - 16px);
+      margin-right: 32px;
+      margin-bottom: 32px;
+      &:nth-child(3n+3) {
+        margin-right: 32px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .catalog_tile {
+    .item {
+      width: calc(50% - 16px);
+      margin-right: 32px;
+      margin-bottom: 32px;
+      &:nth-child(3n+3) {
+        margin-right: 32px;
+      }
+      &:nth-child(2n) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .tile_icons {
+    margin-bottom: 20px;
+    .tile__item {
+      display: flex;
+      align-items: flex-start;
+        img {
+          margin-right: 20px;
+          width: 40px;
+        }
+    }
+  }
+  .contacts_rows {
+    margin-bottom: 0;
+    .page__item_body {
+      margin-bottom: 0;
+    }
+  }
+}
