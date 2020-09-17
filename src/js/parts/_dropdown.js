@@ -21,6 +21,20 @@ $('.dropdown').each(function () {
             $dropdown.find('.dropdown__list').slideDown(250);
         }
     });
+
+    // Hides the unordered list when a list item is clicked and updates the styled div to show the selected list item
+    // Updates the select element to have the value of the equivalent option
+    $dropdownListItems.click(function(e) {
+        e.stopPropagation();
+        $dropdownText.text($(this).text());
+        $dropdown.removeClass('dropdown_opened');
+        $dropdownList.slideUp(150);
+        if($(this).hasClass('tabs__btn')){
+            $(this).addClass('tabs__btn_active').siblings().removeClass('tabs__btn_active');
+            $(this).closest('.tabs').find('.tabs__item').removeClass('active').eq($(this).index()).addClass('active');
+        }
+    });
+
     // Hides the unordered list when clicking outside of it
     $(document.body).click( function() {
         $dropdown.removeClass('dropdown_opened');

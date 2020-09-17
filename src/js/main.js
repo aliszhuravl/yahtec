@@ -7,3 +7,4 @@
 //= parts/_dropdown.js
 //= parts/_accordion.js
 //= parts/_slinky.js
+//= parts/_tabs.js

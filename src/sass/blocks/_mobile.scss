@@ -143,4 +143,78 @@
         border: 0;
       }
   }
+  .tabs__buttons {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-bottom: 20px;
+  }
+  .tabs__btn {
+    margin: 4px 0;
+  }
+  .tile_texts {
+    margin-bottom: 20px;
+  }
+  .equipment_text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .catalog_filters {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  .page_title {
+    h2 {
+      max-width: 90%;
+    }
+  }
+  .items_container {
+    padding-top: 0;
+  }
+  .catalog_filters .right {
+    display: none;
+  }
+  .item_photo .tabs .tabs__content .tabs__item img {
+    width: 100%;
+    height: auto;
+  }
+  .item_photo .tabs .tabs__buttons {
+    margin-bottom: 0;
+    flex-direction: row;
+    border-bottom: 0;
+  }
+  .item_photo .tabs .tabs__buttons .tabs__btn {
+    padding: 10px;
+    margin-right: 10px;
+  }
+  .item_main_box .right {
+    width: 100%;
+  }
+  .item_photo .tabs .tabs__content {
+    margin-bottom: 20px;
+  }
+  .item_main_box .right form {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    .form__item {
+      margin-right: 0;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .btn {
+      width: 100%;
+    }
+  }
+  .item_main_box .right .phone_menu {
+    margin-bottom: 20px;
+  }
+  .descr_lines__item {
+    margin-bottom: 12px;
+  }
+  .descr_lines__item p {
+    font-size: 11px;
+    line-height: 14px;
+  }
 }

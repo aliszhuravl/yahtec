@@ -94,3 +94,38 @@
       }
   }
 }
+
+.the_first {
+  padding-top: 60px;
+}
+
+.invert_box {
+  .right {
+    margin-left: 0 !important;
+    margin-right: -17%;
+      .bold {
+        margin-bottom: 10px;
+      }
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.equipment_text {
+  width: 100%;
+  margin-bottom: 60px;
+  h3 {
+    margin-bottom: 40px;
+    margin-top: 0;
+  }
+  .crossing_box .right:after {
+    display: none;
+  }
+  .crossing_box .right {
+    margin-left: -8%;
+  }
+  .crossing_box .right_box {
+    padding: 56px 0 0 56px;
+  }
+}

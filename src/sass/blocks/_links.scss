@@ -43,8 +43,10 @@
 
 .link_coral {
   color: $color_coral;
+  border-color: $color_coral !important;
     &:hover {
       color: $color-black;
+      border-color: transparent !important;
     }
 }
 
@@ -57,9 +59,9 @@
 }
 
 .link_underlined {
-  text-decoration: underline;
+  border-bottom: 1px dashed $color-black;
 
   &:hover {
-    text-decoration: underline;
+    border-color: transparent;
   }
 }

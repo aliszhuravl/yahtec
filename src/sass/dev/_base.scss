@@ -59,8 +59,27 @@ h3 {
   font-family: $font-family_semibold;
 }
 
+.text20 {
+  font-size: 20px;
+}
+
+.text14 {
+  font-size: 14px;
+}
 
 .bold16 {
   font-family: $font-family_bold;
   font-size: 16px;
+}
+
+.coral {
+  color: $color_coral;
+}
+
+.bold {
+  font-family: $font-family_semibold;
+}
+
+.light {
+  opacity: 0.6;
 }

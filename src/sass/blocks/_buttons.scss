@@ -2,22 +2,20 @@
   position: relative;
   display: inline-block;
   vertical-align: top;
-  height: 32px;
-  padding: 5px 12px;
-  border-radius: 5px;
-  border-width: 1px;
-  border-style: solid;
-  border-color: $color-gray-40;
-  background-color: $color-white;
-  color: $font-color_dark;
-  font-family: $font-family_bold;
-  font-size: $font_default;
+  padding: 15px 45px;
+  background-color: $color-black;
+  border-color: $color-black;
+  color: #fff;
+  height: 60px;
+  font-family: $font-family_medium;
+  font-size: 16px;
   text-align: center;
   white-space: nowrap;
   text-decoration: none;
   cursor: pointer;
   outline: 0;
-  box-shadow: none;  
+  box-shadow: none;
+  transition: all 0.3s ease-out;
 
   &:hover,
   &:active,
@@ -28,8 +26,9 @@
   
   &:hover,
   &:focus {
-    border-color: $color-gray-40;
-    background-color: $color-gray-10;
+    border-color: $color-black;
+    background-color: $color-black;
+    opacity: 0.8;
   }
   
   &:active {

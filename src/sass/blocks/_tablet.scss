@@ -119,4 +119,27 @@
       margin-bottom: 0;
     }
   }
+  .mobile {
+    display: block;
+  }
+  .bc_long {
+    display: none !important;
+  }
+  .catalog_list.catalog_tile .item:nth-child(3n+3) {
+    margin-right: 0;
+  }
+  .item_main_box {
+    flex-direction: column;
+    margin-bottom: 30px;
+    .right {
+      margin-left: 0;
+    }
+    .left {
+      width: 100%;
+    }
+  }
+  .table {
+    width: 100%;
+    overflow-x: auto;
+  }
 }

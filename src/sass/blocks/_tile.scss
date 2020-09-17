@@ -90,3 +90,94 @@
     }
   }
 }
+
+.tile_cabinet {
+  width: 100%;
+  .tile__item {
+    border: 1px solid #ccc;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    color: $color-black;
+    text-decoration: none;
+    transition: 0.3s ease-out;
+      .top {
+        width: 100%;
+        padding: 26px 16px;
+        border-bottom: 1px solid #ccc;
+        font-family: $font-family_semibold;
+        font-size: 14px;
+        transition: 0.3s ease-out;
+          span {
+            opacity: 0.5;
+          }
+      }
+    .catalog {
+      font-family: $font-family_medium;
+    }
+      .text_item {
+        width: 100%;
+        padding: 20px 16px;
+        font-size: 13px;
+      }
+    &:hover {
+      border: 1px solid $color_coral;
+      transition: 0.3s ease-out;
+        .top {
+          color: $color_coral;
+          transition: 0.3s ease-out;
+        }
+    }
+  }
+}
+
+.download {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+    .top {
+      border-right: 1px solid #ccc;
+      border-bottom: 0 !important;
+      transition: 0.3s ease-out;
+    }
+    .download {
+      width: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+      transition: 0.3s ease-out;
+    }
+  &:hover {
+    .download {
+      transition: 0.3s ease-out;
+      background-color: $color_coral;
+        svg path {
+          fill: #fff;
+        }
+    }
+  }
+}
+
+.tile__item {
+  .bold {
+    margin-bottom: 12px;
+  }
+}
+
+.tile_texts {
+  margin-bottom: 40px;
+}
+
+.catalog_list.catalog_tile .item {
+  width: 100%;
+  margin-right: 0;
+  flex-direction: row;
+  align-items: stretch;
+    .item_infobox {
+      border-left: 1px solid #ccc;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+}
