@@ -129,3 +129,142 @@
     padding: 56px 0 0 56px;
   }
 }
+
+.search {
+  position: relative;
+  cursor: pointer;
+}
+
+.search_box {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -8px;
+  left: -200px;
+  transition: all 0.3s ease-out;
+  display: flex;
+  align-items: center;
+    .close_search {
+      display: inline-block;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+  .info_buble {
+    position: absolute;
+    right: 0;
+    width: 206px;
+    top: 100%;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #fff;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    filter: drop-shadow(0px 4px 24px rgba(0, 0, 0, 0.1));
+    transition: all 0.3s ease-out;
+    border: 1px solid #ccc;
+      li {
+        padding: 10px;
+          a {
+            font-size: 12px;
+            line-height: 14px;
+          }
+      }
+  }
+  .form__item {
+    height: 32px;
+    width: 180px;
+    max-width: 180px;
+    margin-right: 0;
+    padding: 0 12px;
+    background-image: url('../img/loop-2.svg');
+    background-repeat: no-repeat;
+    background-position: 180px center;
+    -webkit-background-size: 12px;
+    background-size: 12px;
+  }
+  &:focus-within {
+    .info_buble {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.search_opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+.descr_box .line {
+  min-width: 40px;
+}
+
+.about_article {
+  padding-left: 60px;
+  margin-bottom: 60px;
+    p {
+      margin-bottom: 20px;
+    }
+}
+
+.p_r {
+  .title_descr {
+    margin-bottom: 0 !important;
+  }
+  .right_box {
+    padding: 40px 0 40px 56px !important;
+  }
+}
+
+.about_cb {
+  padding-left: 56px;
+  .right {
+    &:after {
+      display: none !important;
+    }
+  }
+  .right_box {
+    padding: 40px 0 0 40px !important;
+    .right_box__inner {
+      padding-right: 0;
+      .coral {
+        margin-bottom: 10px;
+      }
+      .descr_box p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.last_about__box {
+  padding-left: 56px;
+    .bold16 {
+      margin-bottom: 40px;
+      max-width: 500px;
+      font-size: 18px;
+    }
+    .tile_texts {
+      .tile__item {
+        position: relative;
+          .text14 {
+            padding-left: 30px;
+          }
+      }
+    }
+}
+
+.square {
+  width: 9px;
+  height: 9px;
+  content: '';
+  background-color: $color_coral;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+.last_block {
+  margin-bottom: 0 !important;
+}

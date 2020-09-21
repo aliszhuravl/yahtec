@@ -165,7 +165,7 @@
   }
   .page_title {
     h2 {
-      max-width: 90%;
+      max-width: 100%;
     }
   }
   .items_container {
@@ -216,5 +216,22 @@
   .descr_lines__item p {
     font-size: 11px;
     line-height: 14px;
+  }
+  .item_photo .tabs .tabs__buttons .tabs__btn .item_mini img {
+    width: 100%;
+    max-height: initial;
+  }
+  .p_r {
+    padding-top: 20px;
+  }
+  .about_article {
+    .line {
+      display: none;
+    }
+  }
+  .last_about__box .bold16 {
+    font-size: 16px;
+    max-width: 100%;
+    margin-bottom: 30px;
   }
 }

@@ -22,8 +22,14 @@
   margin: 0 auto;
 }
 
+.main_menu {
+  margin-left: 80px;
+}
+
 .main_contacts {
   display: flex;
+  justify-content: flex-end;
+  flex: 1;
   align-items: center;
     .search {
       margin-right: 20px;

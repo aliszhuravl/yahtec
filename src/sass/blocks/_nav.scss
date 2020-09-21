@@ -17,6 +17,12 @@
   & li:last-child .nav__link {
     padding-right: 0;
   }
+  & li:last-child {
+    padding-right: 0;
+  }
+  & li:first-child {
+    padding-left: 0;
+  }
 }
 
 .nav__link {
@@ -32,8 +38,13 @@
           color: $color_coral;
         }
     }
+  .dropdown__text {
+    &:first-child {
+      padding-left: 0;
+    }
+  }
 }
 
 .simple_link {
-  padding: 0 40px;
+  padding: 0 30px;
 }

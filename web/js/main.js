@@ -302,4 +302,15 @@ $(document).ready(function() {
             $(this).closest('.tabs').find('.tabs__item').removeClass('active').eq($(this).index()).addClass('active');
         });
     });
+
+})(jQuery);
+
+(function($) {
+    $('#search').click( function() {
+        $('.search_box').addClass('search_opened');
+    });
+
+    $('.close_search').click( function() {
+        $('.search_box').removeClass('search_opened');
+    });
 })(jQuery);
