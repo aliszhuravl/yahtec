@@ -1686,6 +1686,10 @@ h3 {
 	margin-bottom: 0 !important;
 }
 
+.tablet {
+	display: none;
+}
+
 .hamburger {
 	position: relative;
 	z-index: 50;
@@ -2800,6 +2804,16 @@ ol li::before {
 
 .link_list li:before {
 	display: none;
+}
+
+.tablet {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.tablet img {
+	width: 30px;
+	height: 30px;
 }
 
 .accordion {
