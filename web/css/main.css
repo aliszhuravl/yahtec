@@ -677,6 +677,12 @@ h3 {
 	min-width: 180px;
 }
 
+.logo img {
+	display: block;
+	width: 180px;
+	height: 19px;
+}
+
 .nav__list {
 	display: flex;
 	flex-direction: row;
@@ -996,6 +1002,12 @@ h3 {
 	padding: 20px 0;
 	align-items: center;
 	justify-content: flex-end;
+}
+
+.footer_bottom .footer__inner .right img {
+	display: block;
+	width: 180px;
+	height: 19px;
 }
 
 .list_first {
@@ -1632,6 +1644,10 @@ h3 {
 
 .about_cb {
 	padding-left: 56px;
+}
+
+.about_cb .left {
+	width: 45% !important;
 }
 
 .about_cb .right:after {
@@ -2699,8 +2715,13 @@ ol li::before {
 	align-items: flex-end;
 }
 
+.crossing_box .left {
+	width: 60%;
+}
+
 .crossing_box .left img {
 	display: block;
+	width: 100%;
 }
 
 .crossing_box .right {
@@ -2804,16 +2825,6 @@ ol li::before {
 
 .link_list li:before {
 	display: none;
-}
-
-.tablet {
-	display: block;
-	margin-bottom: 20px;
-}
-
-.tablet img {
-	width: 30px;
-	height: 30px;
 }
 
 .accordion {
@@ -3918,7 +3929,12 @@ ol li::before {
 
 .article .images img {
 	display: block;
+	max-width: calc(50% - 16px);
 	margin-right: 32px;
+}
+
+.article .images img:nth-child(2n) {
+	margin-right: 0;
 }
 
 .author {
@@ -4297,6 +4313,10 @@ ol li::before {
 	font-size: 18px;
 }
 
+.crossing_box .left {
+	width: 100% !important;
+}
+
 .p_r.crossing_box .right {
 	overflow: hidden;
 	width: 100%;
@@ -4337,6 +4357,21 @@ ol li::before {
 
 .last_about__box {
 	padding-left: 0;
+}
+
+.article .images img {
+	max-width: 100%;
+	margin: 0 0 25px 0;
+}
+
+.tablet {
+	display: block;
+	margin-bottom: 20px;
+}
+
+.tablet img {
+	width: 30px;
+	height: 30px;
 }
 
 }

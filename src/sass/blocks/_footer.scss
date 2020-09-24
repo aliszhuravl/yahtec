@@ -88,6 +88,11 @@
         display: flex;
         align-items: center;
         justify-content: flex-end;
+          img {
+            width: 180px;
+            height: 19px;
+            display: block;
+          }
       }
     }
 }

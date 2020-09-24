@@ -219,6 +219,9 @@
 
 .about_cb {
   padding-left: 56px;
+  .left {
+    width: 45% !important;
+  }
   .right {
     &:after {
       display: none !important;

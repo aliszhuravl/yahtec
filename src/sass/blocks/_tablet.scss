@@ -154,6 +154,9 @@
   .article h3 {
     font-size: 18px;
   }
+  .crossing_box .left {
+    width: 100% !important;
+  }
   .p_r.crossing_box .right {
     overflow: hidden;
     width: 100%;
@@ -188,13 +191,16 @@
   .last_about__box {
     padding-left: 0;
   }
-}
-
-.tablet {
-  display: block;
-  margin-bottom: 20px;
+  .article .images img {
+    max-width: 100%;
+    margin: 0 0 25px 0;
+  }
+  .tablet {
+    display: block;
+    margin-bottom: 20px;
     img {
       width: 30px;
       height: 30px;
     }
+  }
 }

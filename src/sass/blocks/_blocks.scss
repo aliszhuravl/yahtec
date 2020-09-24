@@ -1,8 +1,10 @@
 .crossing_box {
   align-items: flex-end;
     .left {
+      width: 60%;
       img {
         display: block;
+        width: 100%;
       }
     }
     .right {
