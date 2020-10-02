@@ -679,7 +679,7 @@ h3 {
 
 .logo img {
 	display: block;
-	width: 180px;
+	width: 190px;
 	height: 19px;
 }
 
@@ -1704,6 +1704,30 @@ h3 {
 
 .tablet {
 	display: none;
+}
+
+.video_box {
+	width: 100%;
+	align-items: center;
+}
+
+.video_box .left {
+	width: 60%;
+}
+
+.video_box .left .video_frame {
+	width: 100%;
+	max-width: 640px;
+	height: 320px;
+}
+
+.video_box .right {
+	width: 40%;
+}
+
+.video_box .right .bold {
+	font-size: 18px;
+	margin-bottom: 12px;
 }
 
 .hamburger {
@@ -4372,6 +4396,29 @@ ol li::before {
 .tablet img {
 	width: 30px;
 	height: 30px;
+}
+
+.video_box {
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+
+.video_box .left {
+	width: 100%;
+	margin-bottom: 32px;
+}
+
+.video_box .left .video_frame {
+	max-width: 100%;
+}
+
+.video_box .right {
+	width: 100%;
+}
+
+.video_box .right .bold {
+	font-size: 16px;
 }
 
 }
