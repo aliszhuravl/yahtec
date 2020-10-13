@@ -1734,6 +1734,16 @@ h3 {
 	max-width: 50%;
 }
 
+.price__block {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+}
+
+.price__block .text20:first-child {
+	margin-right: 12px;
+}
+
 .hamburger {
 	position: relative;
 	z-index: 50;
@@ -4742,6 +4752,17 @@ h3 {
 	font-size: 16px;
 	max-width: 100%;
 	margin-bottom: 30px;
+}
+
+.price__block {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.price__block .text20:first-child {
+	font-size: 14px;
+	margin-right: 0;
+	margin-bottom: 12px;
 }
 
 }
