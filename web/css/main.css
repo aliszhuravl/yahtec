@@ -1572,6 +1572,15 @@ h3 {
 	margin-right: 12px;
 }
 
+.js-menu {
+	overflow: auto !important;
+}
+
+.js-menu .inner {
+	overflow: auto;
+	border-bottom: 1px solid #ccc;
+}
+
 .hamburger {
 	position: relative;
 	z-index: 50;
@@ -3215,12 +3224,12 @@ ol li::before {
 .menu_mobile {
 	position: fixed;
 	z-index: 10;
-	top: 56px;
+	top: 60px;
 	left: 0;
 	visibility: hidden;
 	width: 85%;
 	max-width: 85%;
-	height: calc(100% - 56px);
+	height: calc(100% - 60px);
 	transition: all .2s ease-in-out;
 	-webkit-transform: translateX(-100%);
 	transform: translateX(-100%);
@@ -3239,7 +3248,7 @@ ol li::before {
 	flex-direction: column;
 	height: 100%;
 	padding-top: 0;
-	padding-bottom: 20px;
+	padding-bottom: 0;
 	justify-content: space-between;
 }
 
@@ -3293,6 +3302,8 @@ ol li::before {
 
 .menu_contacts {
 	padding: 0 20px;
+	padding-top: 20px;
+	border-top: 1px solid #ccc;
 }
 
 .menu_contacts .social {
