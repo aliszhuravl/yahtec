@@ -579,6 +579,10 @@ h3 {
 	margin-bottom: 40px;
 }
 
+.mt_40 {
+	margin-top: 40px;
+}
+
 .header {
 	position: absolute;
 	z-index: 9;
@@ -1579,6 +1583,34 @@ h3 {
 .js-menu .inner {
 	overflow: auto;
 	border-bottom: 1px solid #ccc;
+}
+
+.service_box {
+	width: 100%;
+	margin-bottom: 40px;
+	align-items: center;
+}
+
+.service_box .left {
+	margin-right: 56px;
+}
+
+.service_box .right h3 {
+	margin-bottom: 20px;
+}
+
+.service_box .right .bold {
+	margin-bottom: 12px;
+}
+
+.bordered {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.top-bordered {
+	padding-top: 40px;
+	border-top: 1px solid #e0e0e0;
 }
 
 .hamburger {
@@ -4276,6 +4308,15 @@ ol li::before {
 
 .item_main_box .left {
 	max-width: 100%;
+}
+
+.service_box {
+	flex-direction: column;
+}
+
+.service_box .left {
+	margin-right: 0;
+	margin-bottom: 32px;
 }
 
 }
