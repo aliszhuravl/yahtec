@@ -3066,6 +3066,8 @@ ol li::before {
 }
 
 .tile_cabinet .tile__item {
+	width: 100%;
+	margin-right: 0;
 	transition: .3s ease-out;
 	text-align: left;
 	text-decoration: none;
@@ -3158,6 +3160,48 @@ ol li::before {
 	flex-direction: column;
 	border-left: 1px solid #ccc;
 	justify-content: space-between;
+}
+
+.services_tile {
+	flex-direction: column;
+	width: 100%;
+}
+
+.services_tile .item {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-right: 0;
+	align-items: stretch;
+}
+
+.services_tile .item .item_title {
+	border-top: 0;
+}
+
+.services_tile .item .left {
+	flex-direction: column;
+	padding: 0;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.services_tile .item .left .item_name {
+	font-size: 18px;
+	margin-bottom: 16px;
+}
+
+.services_tile .item .left .item_descr {
+	font-size: 14px;
+}
+
+.services_tile .item .item_image {
+	width: auto;
+	margin-right: 32px;
+}
+
+.services_tile .item .item_image img {
+	width: auto;
 }
 
 .nums {
@@ -4558,6 +4602,25 @@ ol li::before {
 	height: auto;
 }
 
+.services_tile .item {
+	flex-direction: column;
+	width: 100%;
+}
+
+.services_tile .item .tech_solution {
+	width: 100%;
+}
+
+.services_tile .item .tech_solution img {
+	width: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+}
+
+.services_tile .item .item_title .left {
+	padding: 16px;
+}
+
 }
 
 @media (max-width: 960px) {
@@ -4898,6 +4961,19 @@ h3 {
 .popup_inner {
 	width: 100%;
 	padding: 20px;
+}
+
+.services_tile .item .item_title {
+	flex-direction: column;
+}
+
+.services_tile .item .item_title .left {
+	border-right: none;
+	border-bottom: 1px solid #e0e0e0;
+}
+
+.services_tile .item .item_title .right {
+	height: 40px;
 }
 
 }
